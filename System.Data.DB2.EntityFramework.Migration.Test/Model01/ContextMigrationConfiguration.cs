@@ -1,7 +1,6 @@
-using System.Data.Common;
+using System;
 using System.Data.DB2.EntityFramework.Migrations;
 using System.Data.Entity.Migrations;
-using IBM.Data.DB2;
 
 
 namespace System.Data.DB2.EntityFramework.Migration.Test.Model01
