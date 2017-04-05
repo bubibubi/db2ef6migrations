@@ -3,14 +3,14 @@ DB2 Entity Framework 6 Migrations
 
 
 **How to use it**
- - Download the library (using NuGet search for _System.Data.DB2.EntityFramework.Migrations_)
- - Create a migration configuration
- - Setup the migration configuration (usually during first context creation)
- - Setup the history context (you have to change the name of migration history table from __MigrationHistory to a valid DB2 names because IBM DB2 EF provider does not quote names)
+ - Download the library (using NuGet search for _System.Data.DB2.EntityFramework.Migrations_)  
+ - Create a migration configuration  
+ - Setup the migration configuration (usually during first context creation)  
+ - Setup the history context (you have to change the name of migration history table from ```__MigrationHistory``` to a valid DB2 names because IBM DB2 EF provider does not quote names)
 
 _Example_
 
-{{
+```c#
 
 class Context : DbContext
 {
@@ -52,4 +52,4 @@ class DB2HistoryContext : HistoryContext
     } 
 }
 
-}}
+```
